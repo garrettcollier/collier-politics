@@ -11073,9 +11073,19 @@ html.rd-navbar-fixed-linked .page {
 	max-height: 200px;
 }
 
+/* Large screens */
 @media (min-width: 1200px) {
-	.rd-navbar-corporate.rd-navbar-static .rd-navbar-brand img {
-		max-width: 250px;
+	.rd-navbar-corporate .rd-navbar-brand img {
+	  	max-width: 250px;
+	  	height: auto;
+	}
+}
+
+/* Tablets and below (≤992px) */
+@media (max-width: 992px) {
+	.rd-navbar-corporate .rd-navbar-brand img {
+	  	max-height: 50px;
+	  	width: auto;
 	}
 }
 
