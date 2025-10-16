@@ -31,21 +31,50 @@
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
           <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-aside-outer">
+              <div class="rd-navbar-aside">
+                <div class="rd-navbar-panel">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
+                  <a class="rd-navbar-brand" href="index.html"><img src="img/Collier.png" alt="" style="height: 150px;"/></a>
+                </div>
+                <div class="rd-navbar-collapse">
+                  <button class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle="#rd-navbar-collapse-content-1"><span></span></button>
+                  <div class="rd-navbar-collapse-content" id="rd-navbar-collapse-content-1">
+                    <article class="unit align-items-center">
+                      <div class="unit-left"><span class="icon icon-md icon-modern mdi mdi-phone"></span></div>
+                      <div class="unit-body">
+                        <ul class="list-0">
+                          <li><a class="link-default" href="tel:501-762-1850">501-762-1850</a></li>
+                        </ul>
+                      </div>
+                    </article>
+                    <article class="unit align-items-center">
+                      <div class="unit-left"><span class="icon icon-md icon-modern mdi mdi-map-marker"></span></div>
+                      <div class="unit-body"><a class="link-default" href="">Hot Springs, AR 71901 <br> District 5</a></div>
+                    </article><a class="button button-primary button-winona" href="donate.html">Donate Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="rd-navbar-main-outer">
               <div class="rd-navbar-main">
                 <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
-                  <!-- RD Navbar Search-->
-                  <div class="rd-navbar-search" id="rd-navbar-search-1">
+                  <div>
+                    <ul class="list-inline list-inline-md">
+                      <li><a class="icon icon-sm link-default mdi mdi-facebook" href="#"></a></li>
+                      <!-- <li><a class="icon icon-sm link-default mdi mdi-twitter" href="#"></a></li> -->
+                      <li><a class="icon icon-sm link-default mdi mdi-instagram" href="#"></a></li>
+                      <!-- <li><a class="icon icon-sm link-default mdi mdi-google" href="#"></a></li> -->
+                      <li><a class="icon icon-sm link-default mdi mdi-linkedin" href="#"></a></li>
+                    </ul>
                   </div>
-                  <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
                     <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
                     </li>
                     <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="programs.html">Programs</a></li> -->
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="grid-gallery.html">Gallery</a>
-                    </li>
+                    <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="grid-gallery.html">Gallery</a></li> -->
                     <li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact</a>
                     </li>
                   </ul>
@@ -84,26 +113,27 @@
             </div>
             <div class="layout-bordered-item wow-outer">
               <div class="layout-bordered-item-inner wow slideInUp">
-                <div class="icon icon-lg mdi mdi-email text-primary"></div><a class="link-default" href="mailto:#">info@demolink.org</a>
+                <div class="icon icon-lg mdi mdi-email text-primary"></div><a class="link-default" href="mailto:garrettcollierbusiness@gmail.com">garrettcollierbusiness@gmail.com</a>
               </div>
             </div>
             <div class="layout-bordered-item wow-outer">
               <div class="layout-bordered-item-inner wow slideInUp">
-                <div class="icon icon-lg mdi mdi-map-marker text-primary"></div><a class="link-default" href="#">2130 Fulton Street San Diego, CA 94117-1080 USA</a>
+                <div class="icon icon-lg mdi mdi-map-marker text-primary"></div><a class="link-default" href="#">Hot Springs, AR 71901</a>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- Contact-->
       <section class="section bg-gray-100">
         <div class="range justify-content-xl-between">
-          <div class="cell-xl-6 align-self-center container">
+          <div class="cell-xl-12 align-self-center container">
             <div class="row">
               <div class="col-lg-9 cell-inner">
                 <div class="section-lg">
                   <h3 class="wow-outer"><span class="wow slideInDown">Get in Touch</span></h3>
                   <!-- RD Mailform-->
-                  <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                  <form class="rd-form rd-mailform" action="mailto:garrettcollierbusiness@gmail.com" method="POST" enctype="text/plain">
                     <div class="row row-10">
                       <div class="col-md-6 wow-outer">
                         <div class="form-wrap wow fadeSlideInUp">
@@ -152,65 +182,48 @@
             <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
             <!--Please note that YOUR_API_KEY should replaced with your key.-->
             <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">-->
-            <div class="google-map-container" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-zoom="5" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;water&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#e9e9e9&quot;},{&quot;lightness&quot;:17}]},{&quot;featureType&quot;:&quot;landscape&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f5f5f5&quot;},{&quot;lightness&quot;:20}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:17}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:29},{&quot;weight&quot;:0.2}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:18}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:16}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f5f5f5&quot;},{&quot;lightness&quot;:21}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#dedede&quot;},{&quot;lightness&quot;:21}]},{&quot;elementType&quot;:&quot;labels.text.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:16}]},{&quot;elementType&quot;:&quot;labels.text.fill&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:36},{&quot;color&quot;:&quot;#333333&quot;},{&quot;lightness&quot;:40}]},{&quot;elementType&quot;:&quot;labels.icon&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f2f2f2&quot;},{&quot;lightness&quot;:19}]},{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#fefefe&quot;},{&quot;lightness&quot;:20}]},{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#fefefe&quot;},{&quot;lightness&quot;:17},{&quot;weight&quot;:1.2}]}]">
+            <!-- <div class="google-map-container" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-zoom="5" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;water&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#e9e9e9&quot;},{&quot;lightness&quot;:17}]},{&quot;featureType&quot;:&quot;landscape&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f5f5f5&quot;},{&quot;lightness&quot;:20}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:17}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:29},{&quot;weight&quot;:0.2}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:18}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:16}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f5f5f5&quot;},{&quot;lightness&quot;:21}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#dedede&quot;},{&quot;lightness&quot;:21}]},{&quot;elementType&quot;:&quot;labels.text.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:16}]},{&quot;elementType&quot;:&quot;labels.text.fill&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:36},{&quot;color&quot;:&quot;#333333&quot;},{&quot;lightness&quot;:40}]},{&quot;elementType&quot;:&quot;labels.icon&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f2f2f2&quot;},{&quot;lightness&quot;:19}]},{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#fefefe&quot;},{&quot;lightness&quot;:20}]},{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#fefefe&quot;},{&quot;lightness&quot;:17},{&quot;weight&quot;:1.2}]}]">
               <div class="google-map"></div>
               <ul class="google-map-markers">
                 <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
+      <!-- Page Footer-->
       <!-- Page Footer-->
       <footer class="section footer-advanced bg-primary-darker">
         <div class="footer-advanced-main">
           <div class="container">
             <div class="row row-50">
-              <div class="col-lg-4">
+              <div class="col-lg-6">
                 <h4>About Garrett Collier</h4>
-                <p class="footer-advanced-text">Garrett Collier is a life-long innovator in politics who built his career on delivering results through introducing reforms and improvements for our society and economy. A former teacher and city education department administrator, his main goal is to bring considerable political  and economic improvements.</p>
+                <p class="footer-advanced-text">Garrett Collier is a lifelong Hot Springs resident running for City Director in District 5. His campaign focuses on transparency, collaboration, and community growth that benefits every resident.</p>
               </div>
-              <!-- <div class="col-sm-6 col-lg-4">
-                <h4>Recent Blog Posts</h4>
-                
-                <article class="post-inline">
-                  <p class="post-inline-title"><a href="single-blog-post.html">House Democrats are Now Divided Over Party Agenda Under Trump</a></p>
-                  <ul class="post-inline-meta">
-                    <li>by Theresa Barnes</li>
-                    <li><a href="single-blog-post.html">2 days ago</a></li>
-                  </ul>
-                </article>
-                
-                <article class="post-inline">
-                  <p class="post-inline-title"><a href="single-blog-post.html">Meet the Rightwing Players That Lurk Beneath Silicon Valley's Liberal Facade</a></p>
-                  <ul class="post-inline-meta">
-                    <li>by Theresa Barnes</li>
-                    <li><a href="single-blog-post.html">2 days ago</a></li>
-                  </ul>
-                </article>
-              </div> -->
-              <div class="col-sm-6 col-lg-4 box-style-1">
+              <div class="col-sm-6 col-lg-6 box-style-1">
                 <h4>Our Gallery</h4>
                 <div class="row row-x-10" data-lightgallery="group">
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-1-1200x800-original.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery-1-85x85.jpg" alt="">
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="img/WGG.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="img/WGG.jpg" alt="">
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-2-1200x800-original.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery-2-85x85.jpg" alt="">
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="img/WG.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="img/WG.jpg" alt="">
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-3-1200x800-original.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery-3-85x85.jpg" alt="">
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="img/GCap.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="img/GCap.jpg" alt="">
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-4-1200x800-original.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery-4-85x85.jpg" alt="">
+                  <!-- <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="img/Profile.JPG" data-lightgallery="item"><img class="thumbnail-minimal-image" src="img/Profile.JPG" alt="">
+                      <div class="thumbnail-minimal-caption"></div></a></div> -->
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="img/USCG.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="img/USCG.jpg" alt="">
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-5-1200x800-original.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery-5-85x85.jpg" alt="">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-6-1200x800-original.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery-6-85x85.jpg" alt="">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-7-1200x800-original.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery-7-85x85.jpg" alt="">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-8-1200x800-original.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery-8-85x85.jpg" alt="">
-                      <div class="thumbnail-minimal-caption"></div></a></div>
+                  <!-- <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-6-1200x800-original.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery-6-85x85.jpg" alt="">
+                      <div class="thumbnail-minimal-caption"></div></a></div> -->
+                  <!-- <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-7-1200x800-original.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery-7-85x85.jpg" alt="">
+                      <div class="thumbnail-minimal-caption"></div></a></div> -->
+                  <!-- <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-8-1200x800-original.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/gallery-8-85x85.jpg" alt="">
+                      <div class="thumbnail-minimal-caption"></div></a></div> -->
                 </div>
               </div>
             </div>
+            <a class="brand" href="index.html"><img src="img/Collier.png" alt="" width="201" height="36" srcset="img/Collier.png"/></a>
           </div>
         </div>
         <div class="footer-advanced-aside">
@@ -220,18 +233,18 @@
                 <ul class="list-nav">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About</a></li>
-                  <li><a href="programs.html">Programs</a></li>
-                  <li><a href="grid-gallery.html">Gallery</a></li>
-                  <li><a href="grid-blog.html">Blog</a></li>
+                  <!-- <li><a href="programs.html">Programs</a></li> -->
+                  <!-- <li><a href="grid-gallery.html">Gallery</a></li> -->
+                  <!-- <li><a href="grid-blog.html">Blog</a></li> -->
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
               <div>
                 <ul class="list-inline list-inline-md">
                   <li><a class="icon icon-sm link-default mdi mdi-facebook" href="#"></a></li>
-                  <li><a class="icon icon-sm link-default mdi mdi-twitter" href="#"></a></li>
+                  <!-- <li><a class="icon icon-sm link-default mdi mdi-twitter" href="#"></a></li> -->
                   <li><a class="icon icon-sm link-default mdi mdi-instagram" href="#"></a></li>
-                  <li><a class="icon icon-sm link-default mdi mdi-google" href="#"></a></li>
+                  <!-- <li><a class="icon icon-sm link-default mdi mdi-google" href="#"></a></li> -->
                   <li><a class="icon icon-sm link-default mdi mdi-linkedin" href="#"></a></li>
                 </ul>
               </div>
@@ -243,9 +256,9 @@
         </div>
         <div class="footer-advanced-aside">
           <div class="container">
-            <div class="footer-advanced-layout"><a class="brand" href="index.html"><img src="images/logo-inverse-201x36.png" alt="" width="201" height="36" srcset="images/logo-inverse-400x73.png 2x"/></a>
+            <div class="footer-advanced-layout">
               <!-- Rights-->
-              <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/><a href="privacy-policy.html">Privacy Policy</a>. Design&nbsp;by&nbsp;<a href="https://zemez.io/">Zemez</a></p>
+              <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/><a href="privacy-policy.html">Privacy Policy</a>. Design&nbsp;by&nbsp;<a href="https://sitesbycollier.com/">Sites By Collier</a></p>
             </div>
           </div>
         </div>
