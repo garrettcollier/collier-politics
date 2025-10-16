@@ -5,6 +5,7 @@
   "hints": {
     "meta-viewport": "off",
     "button-type": "off",
-    "axe/name-role-value": "off"
+    "axe/name-role-value": "off",
+    "disown-opener": "off"
   }
 }
