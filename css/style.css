@@ -4606,7 +4606,7 @@ html:not(.tablet):not(.mobile)[data-x-mode='true'] .thumbnail-corporate:hover .t
 	position: relative;
 	overflow: hidden;
 	display: block;
-	border-radius: 6px;
+	border-radius: 10px;
 }
 
 .thumbnail-light-media::before {
@@ -4623,10 +4623,10 @@ html:not(.tablet):not(.mobile)[data-x-mode='true'] .thumbnail-corporate:hover .t
 	pointer-events: none;
 }
 
-.thumbnail-light-media:hover::before {
+/* .thumbnail-light-media:hover::before {
 	opacity: 1;
 	visibility: visible;
-}
+} */
 
 .thumbnail-light-image {
 	width: 100%;
