@@ -68,7 +68,7 @@ cite {
 	font-style: normal;
 }
 
-form {ContactContactContactContactContact
+form {
 	margin-bottom: 0;
 }
 
@@ -99,7 +99,6 @@ body {
 	font-size: 14px;
 	line-height: 1.7;
 	font-weight: 300;
-	color: #74757f;
 	background-color: #fff;
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -12023,7 +12022,6 @@ button.swiper-pagination-bullet {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 	pointer-events: none;
 }
 
@@ -12046,8 +12044,16 @@ button.swiper-pagination-bullet {
 	margin-top: 20px;
 }
 
+.swiper-slide h1 .font-weight-light {
+	font-size: 0.7em;
+	line-height: 1.1;
+}
+
 @media (max-width: 575px) {
 	.swiper-slider-light .swiper-slide-caption {
+		display: none;
+	}
+	.swiper-slider-light .swiper-pagination-outer {
 		display: none;
 	}
 	.wow {
@@ -12071,9 +12077,10 @@ button.swiper-pagination-bullet {
 	}
 	.swiper-slider-light .swiper-slide-caption {
 		padding: 80px 0 100px;
+		transform: translateY(70px);
 	}
 	.swiper-slider-light .swiper-pagination-outer {
-		bottom: 50px;
+		display: none;
 	}
 }
 
