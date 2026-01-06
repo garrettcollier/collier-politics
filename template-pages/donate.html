@@ -60,11 +60,11 @@
                 <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
                   <div>
                     <ul class="list-inline list-inline-md">
-                      <li><a class="icon icon-sm link-default mdi mdi-facebook" href="#"></a></li>
+                      <li><a class="icon icon-sm link-default mdi mdi-facebook" href="https://www.facebook.com/profile.php?id=61580436017683"></a></li>
                       <!-- <li><a class="icon icon-sm link-default mdi mdi-twitter" href="#"></a></li> -->
-                      <li><a class="icon icon-sm link-default mdi mdi-instagram" href="#"></a></li>
+                      <li><a class="icon icon-sm link-default mdi mdi-instagram" href="https://www.instagram.com/collierforhotsprings/"></a></li>
                       <!-- <li><a class="icon icon-sm link-default mdi mdi-google" href="#"></a></li> -->
-                      <li><a class="icon icon-sm link-default mdi mdi-linkedin" href="#"></a></li>
+                      <li><a class="icon icon-sm link-default mdi mdi-linkedin" href="https://www.linkedin.com/in/garrettcolecollier/"></a></li>
                     </ul>
                   </div>
                   <ul class="rd-navbar-nav">
@@ -113,8 +113,8 @@
           </p>
           <div class="row justify-content-center">
             <div class="col-md-11 col-lg-8 col-xl-6">
-              <!-- RD Mailform-->
-              <form class="rd-form rd-mailform form-style-1" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+              <!-- Donate form-->
+              <form class="rd-form rd-mailform form-style-1" data-form-output="form-output-global" data-form-type="contact">
                 <div class="row row-10">
                   <div class="col-md-6">
                     <div class="form-wrap">
@@ -140,6 +140,18 @@
                       <input class="form-input" id="donate-email" type="email" name="email" data-constraints="@Email @Required">
                     </div>
                   </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <label class="form-label-outside" for="donate-employer">Employer</label>
+                      <input class="form-input" id="donate-employer" type="text" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <label class="form-label-outside" for="donate-occupation">Occupation</label>
+                      <input class="form-input" id="donate-occupation" type="text" required>
+                    </div>
+                  </div>
                   <div class="col-12">
                     <div class="form-label-outside">Select an amount</div>
                     <div class="box-radio">
@@ -162,11 +174,23 @@
                     </div>
                   </div>
                 </div>
+                <div class="form-wrap text-left mt-4">
+                  <label>
+                    <input type="checkbox" id="donor-cert" required>
+                    I certify that I am at least 18 years old, a U.S. citizen or lawful permanent resident,
+                    and that this contribution is made from my own funds. I am not a corporation,
+                    labor union, or foreign national, and this contribution is not made on behalf of another.
+                  </label>
+                </div>
                 <div class="group group-middle">
-                  <button class="button button-primary button-winona" type="submit">Donate now</button>
+                  <button class="button button-primary button-winona" type="button" onclick="handleDonate()">Donate now</button>
                 </div>
               </form>
             </div>
+            <p class="text-muted mt-4" style="font-size: 14px;">
+              Contributions are subject to Arkansas campaign finance laws.
+              Contributions are not deductible for federal income tax purposes.
+            </p>            
           </div>
         </div>
       </section>
@@ -220,11 +244,11 @@
               </div>
               <div>
                 <ul class="list-inline list-inline-md">
-                  <li><a class="icon icon-sm link-default mdi mdi-facebook" href="#"></a></li>
+                  <li><a class="icon icon-sm link-default mdi mdi-facebook" href="https://www.facebook.com/profile.php?id=61580436017683"></a></li>
                   <!-- <li><a class="icon icon-sm link-default mdi mdi-twitter" href="#"></a></li> -->
-                  <li><a class="icon icon-sm link-default mdi mdi-instagram" href="#"></a></li>
+                  <li><a class="icon icon-sm link-default mdi mdi-instagram" href="https://www.instagram.com/collierforhotsprings/"></a></li>
                   <!-- <li><a class="icon icon-sm link-default mdi mdi-google" href="#"></a></li> -->
-                  <li><a class="icon icon-sm link-default mdi mdi-linkedin" href="#"></a></li>
+                  <li><a class="icon icon-sm link-default mdi mdi-linkedin" href="https://www.linkedin.com/in/garrettcolecollier/"></a></li>
                 </ul>
               </div>
             </div>
