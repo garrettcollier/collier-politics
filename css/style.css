@@ -12046,11 +12046,18 @@ button.swiper-pagination-bullet {
 	margin-top: 20px;
 }
 
-@media (min-width: 576px) {
-	.swiper-slider-light .swiper-slide::before {
-		background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+@media (max-width: 575px) {
+	.swiper-slider-light .swiper-slide-caption {
+		display: none;
 	}
-	.swiper-slider-light .slider-slide-caption {
+	.wow {
+		animation: none !important;
+		visibility: visible !important;
+	}
+}
+
+@media (min-width: 576px) {
+	.swiper-slider-light .swiper-slide-caption {
 		padding: 45px 0 95px;
 	}
 }

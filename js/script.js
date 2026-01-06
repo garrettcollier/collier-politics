@@ -1143,6 +1143,8 @@
 					direction: s.attr('data-direction') ? s.attr('data-direction') : "horizontal",
 					effect: s.attr('data-slide-effect') ? s.attr('data-slide-effect') : "slide",
 					speed: s.attr('data-slide-speed') ? s.attr('data-slide-speed') : 600,
+					updateOnWindowResize: false,
+					resizeObserver: false,
 					loop: isNoviBuilder ? false : s.attr('data-loop') !== "false",
 					simulateTouch: s.attr('data-simulate-touch') && !isNoviBuilder ? s.attr('data-simulate-touch') === "true" : false,
 					navigation: {
@@ -1171,6 +1173,7 @@
 							toggleSwiperInnerVideos(this);
 						},
 						transitionEnd: function () {
+							if (window.innerwidth < 768) return;
 							var $buttonsWinona = $(this.slides[this.activeIndex]).find('.button-winona');
 							if ($buttonsWinona.length && !isNoviBuilder) {
 								initWinonaButtons($buttonsWinona);
@@ -1179,8 +1182,11 @@
 					}
 				};
 
-				if (s.attr('data-custom-slide-effect') === 'inter-leave-effect') {
-					var interleaveOffset = s.attr('data-inter-leave-offset') ? s.attr('data-inter-leave-offset') : -.7;
+				if (s.attr('data-custom-slide-effect') === 'inter-leave-effect' && window.innerWidth >= 768) {
+					var interleaveOffset = s.attr('data-inter-leave-offset') 
+					? s.attr('data-inter-leave-offset') 
+					: -.7;
+					
 					swiperOptions = $.extend(true, swiperOptions, makeInterLeaveEffectOptions(interleaveOffset));
 				}
 
