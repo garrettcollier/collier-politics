@@ -12035,7 +12035,7 @@ button.swiper-pagination-bullet {
 	position: relative;
 	z-index: 1;
 	max-width: 820px;
-	padding: 50px 0 10px;
+	padding: 50px 0 50px;
 }
 
 .swiper-slider-light h1 span, .swiper-slider-light h2 span, .swiper-slider-light h3 span, .swiper-slider-light h4 span, .swiper-slider-light h5 span, .swiper-slider-light h6 span, .swiper-slider-light [class^='heading-'] span {
@@ -12051,7 +12051,7 @@ button.swiper-pagination-bullet {
 		background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
 	}
 	.swiper-slider-light .slider-slide-caption {
-		padding: 45px 0 0px;
+		padding: 45px 0 95px;
 	}
 }
 
@@ -12063,7 +12063,7 @@ button.swiper-pagination-bullet {
 		display: none;
 	}
 	.swiper-slider-light .swiper-slide-caption {
-		padding: 80px 0 10px;
+		padding: 80px 0 100px;
 	}
 	.swiper-slider-light .swiper-pagination-outer {
 		bottom: 50px;
