@@ -7349,6 +7349,12 @@ html.boxed body {
 	letter-spacing: 0;
 }
 
+.section p,
+.box-minimal p,
+.text-width-1 {
+  color: #434452;
+}
+
 /*
 *
 * Offsets
