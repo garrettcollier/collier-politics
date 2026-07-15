@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-* Trunk version 2.0.0
+* Collier for City Director site styles
 */
 a:focus,
 button:focus {
@@ -16195,6 +16195,133 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-css3.lg-slide.lg-use-left .lg-item.lg-current, .lg-css3.lg-slide.lg-use-left .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-left .lg-item.lg-prev-slide {
 	transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+}
+
+/*
+* Campaign refinements
+*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.rd-navbar-brand img,
+.preloader-logo img,
+.brand img {
+	width: auto;
+	max-width: min(250px, 70vw);
+	max-height: 72px;
+	object-fit: contain;
+}
+
+.campaign-portrait {
+	display: block;
+	width: min(100%, 420px);
+	max-height: 620px;
+	margin: 0 auto;
+	border-radius: 8px;
+	object-fit: cover;
+	object-position: center top;
+}
+
+.thumbnail-light-media {
+	aspect-ratio: 9 / 10;
+}
+
+.thumbnail-light-image {
+	display: block;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.footer-advanced .row-x-10 {
+	align-items: stretch;
+}
+
+.footer-advanced .thumbnail-minimal {
+	border-radius: 6px;
+}
+
+.footer-advanced .thumbnail-minimal-image {
+	will-change: transform;
+}
+
+.profile-modern-image {
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
+	object-position: center top;
+}
+
+.rights {
+	line-height: 1.6;
+}
+
+.rights-main,
+.rights-legal {
+	display: block;
+}
+
+.rights-legal {
+	margin-top: 4px;
+}
+
+@media (max-width: 575.98px) {
+	.swiper-slider-light {
+		min-height: 76vw;
+	}
+
+	.swiper-slider-light .swiper-slide {
+		background-position: center top;
+	}
+
+	.swiper-slider-light .swiper-slide-caption {
+		display: block;
+		max-width: 92vw;
+		padding: 42px 0 56px;
+		transform: none;
+	}
+
+	.swiper-slider-light h1,
+	.swiper-slider-light .heading-1 {
+		font-size: 28px;
+		line-height: 1.15;
+	}
+
+	.swiper-slider-light .button-lg {
+		padding: 13px 24px;
+		font-size: 13px;
+	}
+
+	.section-lg {
+		padding-top: 55px;
+		padding-bottom: 55px;
+	}
+
+	.campaign-portrait {
+		width: min(100%, 340px);
+		max-height: 500px;
+	}
+
+	.footer-advanced-main {
+		padding-bottom: 35px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+	.swiper-slider-light {
+		min-height: 52vw;
+	}
+
+	.swiper-slider-light .swiper-slide-caption {
+		transform: translateY(20px);
+	}
+}
+
+@media (min-width: 992px) {
+	.thumbnail-light-media {
+		aspect-ratio: 9 / 11;
+	}
 }
 
 .lg-sub-html, .lg-toolbar {

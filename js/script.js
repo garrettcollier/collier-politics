@@ -1707,6 +1707,10 @@
 				var $button = $(buttons[i]),
 					innerContent = $button.html();
 
+				if ($button.children('.content-original, .content-dubbed').length) {
+					continue;
+				}
+
 				$button.html('');
 				$button.append('<div class="content-original">' + innerContent + '</div>');
 				$button.append('<div class="content-dubbed">' + innerContent + '</div>');
