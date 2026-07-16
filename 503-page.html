@@ -7,17 +7,35 @@
     <meta name="robots" content="noindex">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script>
+      (function () {
+        var cleanPath = {
+          "/index.html": "/",
+          "/about.html": "/about/",
+          "/contact.html": "/contact/",
+          "/privacy-policy.html": "/privacy-policy/"
+        }[window.location.pathname];
+
+        if (!cleanPath && window.location.pathname.endsWith("/index.html")) {
+          cleanPath = window.location.pathname.slice(0, -"index.html".length);
+        }
+
+        if (cleanPath) {
+          window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
+        }
+      }());
+    </script>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7COswald:300,400,500">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css?v=20260715">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css?v=20260715">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <div class="preloader">
-      <div class="preloader-logo"><img src="img/Collier.png" alt="Collier for City Director" width="250" height="42"/>
+      <div class="preloader-logo"><img src="/img/Collier.png" alt="Collier for City Director" width="250" height="42"/>
       </div>
       <div class="preloader-body">
         <div id="loadingProgressG">
@@ -26,7 +44,7 @@
       </div>
     </div>
     <div class="page">
-<section class="section section-single bg-gray-800" style="background-image: url(images/bg-image-3.jpg);">
+<section class="section section-single bg-gray-800" style="background-image: url(/images/bg-image-3.jpg);">
         <div class="section-single-inner">
           <div class="section-single-dummy"></div>
           <div class="section-single-main">
@@ -38,7 +56,7 @@
                 <div class="col-sm-6">
                   <div class="section-single-main-content">
                     <h6 class="title-decorated title-decorated-lg">Service is temporarily unavailable</h6>
-                    <p>Sorry, we're offline right now to make our site even better.<br>Please, come back later and check what we've been up to.</p><a class="button button-lg button-primary button-winona" href="index.html">Back to home page</a>
+                    <p>Sorry, we're offline right now to make our site even better.<br>Please, come back later and check what we've been up to.</p><a class="button button-lg button-primary button-winona" href="/">Back to home page</a>
                   </div>
                 </div>
               </div>
@@ -49,7 +67,7 @@
               <div class="footer-advanced-layout">
 <p class="rights">
   <span class="rights-main"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;Collier for City Director. All rights reserved.</span></span>
-  <span class="rights-legal"><a href="privacy-policy.html">Privacy Policy</a><span>&nbsp;|&nbsp;Paid for by Collier for City Director.</span></span>
+  <span class="rights-legal"><a href="/privacy-policy/">Privacy Policy</a><span>&nbsp;|&nbsp;Paid for by Collier for City Director.</span></span>
 </p>
               </div>
             </div>
@@ -58,7 +76,7 @@
       </section>
     </div>
 <div class="snackbars" id="form-output-global"></div>
-<script src="js/core.min.js"></script>
-    <script src="js/script.js?v=20260715"></script>
+<script src="/js/core.min.js"></script>
+    <script src="/js/script.js?v=20260715"></script>
   </body>
 </html>

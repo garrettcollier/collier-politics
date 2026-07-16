@@ -12,16 +12,34 @@
     <meta property="og:type" content="website">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script>
+      (function () {
+        var cleanPath = {
+          "/index.html": "/",
+          "/about.html": "/about/",
+          "/contact.html": "/contact/",
+          "/privacy-policy.html": "/privacy-policy/"
+        }[window.location.pathname];
+
+        if (!cleanPath && window.location.pathname.endsWith("/index.html")) {
+          cleanPath = window.location.pathname.slice(0, -"index.html".length);
+        }
+
+        if (cleanPath) {
+          window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
+        }
+      }());
+    </script>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7COswald:300,400,500">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css?v=20260715">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css?v=20260715">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
     <div class="preloader">
-      <div class="preloader-logo"><img src="img/Collier.png" alt="Collier for City Director" width="250" height="42"/>
+      <div class="preloader-logo"><img src="/img/Collier.png" alt="Collier for City Director" width="250" height="42"/>
       </div>
       <div class="preloader-body">
         <div id="loadingProgressG">
@@ -37,7 +55,7 @@
               <div class="rd-navbar-aside">
                 <div class="rd-navbar-panel">
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
-                  <a class="rd-navbar-brand" href="index.html"><img src="img/Collier.png" alt="Collier for City Director"/></a>
+                  <a class="rd-navbar-brand" href="/"><img src="/img/Collier.png" alt="Collier for City Director"/></a>
                 </div>
                 <div class="rd-navbar-collapse">
                   <button class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle="#rd-navbar-collapse-content-1"><span></span></button>
@@ -69,12 +87,12 @@
                     </ul>
                   </div>
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Home</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/about/">About</a>
                     </li>
 
-<li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact</a>
+<li class="rd-nav-item"><a class="rd-nav-link" href="/contact/">Contact</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="https://buy.stripe.com/14A14m8mxflxbtGfCw6wE00" target="_blank" rel="noopener noreferrer">Donate</a>
                     </li>
@@ -87,32 +105,32 @@
       </header>
 <section class="swiper-container swiper-slider swiper-slider-light" data-loop="true" data-autoplay="5000" data-simulate-touch="false" data-custom-slide-effect="inter-leave-effect" data-inter-leave-offset="-.5">
         <div class="swiper-wrapper">
-          <div class="swiper-slide context-dark" data-slide-bg="img/resized/banner-1.jpg">
+          <div class="swiper-slide context-dark" data-slide-bg="/img/resized/banner-1.jpg">
             <div class="slide-inner">
               <div class="container">
                 <div class="swiper-slide-caption">
                   <h1 class="wow-outer"><span class="font-weight-light wow-outer"><span class="wow" data-caption-animate="slideInDown">Building a Stronger</span></span><span class="font-weight-bold wow-outer"><span class="wow" data-caption-animate="slideInDown" data-wow-delay="0">Hot Springs</span></span></h1>
-                  <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow" href="about.html" data-caption-animate="slideInDown" data-wow-delay=".2s">Learn more</a></div>
+                  <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow" href="/about/" data-caption-animate="slideInDown" data-wow-delay=".2s">Learn more</a></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide context-dark" data-slide-bg="img/resized/banner-2.jpg">
+          <div class="swiper-slide context-dark" data-slide-bg="/img/resized/banner-2.jpg">
             <div class="slide-inner">
               <div class="container">
                 <div class="swiper-slide-caption">
                   <h1 class="wow-outer"><span class="font-weight-light wow-outer"><span class="wow" data-caption-animate="slideInDown">Working Together for</span></span><span class="font-weight-bold wow-outer"><span class="wow" data-caption-animate="slideInDown" data-wow-delay="0">Our Community</span></span></h1>
-                  <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow" href="about.html" data-caption-animate="slideInDown" data-wow-delay=".2s">Learn more</a></div>
+                  <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow" href="/about/" data-caption-animate="slideInDown" data-wow-delay=".2s">Learn more</a></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide context-dark" data-slide-bg="img/resized/banner-3.jpg">
+          <div class="swiper-slide context-dark" data-slide-bg="/img/resized/banner-3.jpg">
             <div class="slide-inner">
               <div class="container">
                 <div class="swiper-slide-caption">
                   <h1 class="wow-outer"><span class="font-weight-light wow-outer"><span class="wow" data-caption-animate="slideInDown">Leadership You Can</span></span><span class="font-weight-bold wow-outer"><span class="wow" data-caption-animate="slideInDown" data-wow-delay="0">Trust</span></span></h1>
-                  <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow" href="about.html" data-caption-animate="slideInDown" data-wow-delay=".2s">Learn more</a></div>
+                  <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow" href="/about/" data-caption-animate="slideInDown" data-wow-delay=".2s">Learn more</a></div>
                 </div>
               </div>
             </div>
@@ -131,7 +149,7 @@
               <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".05s">With a Master's in Public Administration and experience in the City's Planning Commission, Board of Zoning and Adjustments, and now Art Advisory Committee, Garrett has seen firsthand how collaboration and thoughtful leadership can move our community forward.</span></p>
               <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".1s">His campaign focuses on practical solutions for Hot Springs — not politics — centered on transparency, accountability, and putting people first.</span></p>
 </div>
-            <div class="col-md-10 col-lg-6 wow-outer"><img class="img-responsive campaign-portrait wow slideInLeft" src="img/resized/Garrett-Collier-suit.jpg" alt="Garrett Collier" width="1280" height="1920" loading="lazy" decoding="async"/>
+            <div class="col-md-10 col-lg-6 wow-outer"><img class="img-responsive campaign-portrait wow slideInLeft" src="/img/resized/Garrett-Collier-suit.jpg" alt="Garrett Collier" width="1280" height="1920" loading="lazy" decoding="async"/>
             </div>
           </div>
         </div>
@@ -154,22 +172,22 @@
           <p class="wow-outer"><span class="wow slideInDown text-width-1">Garrett's campaign focuses on practical improvements that make daily life better for everyone in Hot Springs.</span></p>
           <div class="row row-30 offset-top-2">
             <div class="col-sm-6 col-lg-3 wow-outer">
-<article class="thumbnail-light wow slideInLeft"><a class="thumbnail-light-media"><img class="thumbnail-light-image" src="img/display/Garrett-Collier-thinking.jpg" alt="Garrett Collier listening and planning" width="720" height="480" loading="lazy" decoding="async"/></a>
+<article class="thumbnail-light wow slideInLeft"><a class="thumbnail-light-media"><img class="thumbnail-light-image" src="/img/display/Garrett-Collier-thinking.jpg" alt="Garrett Collier listening and planning" width="720" height="480" loading="lazy" decoding="async"/></a>
                 <h5 class="thumbnail-light-title wow slideInLeft">Forward Thinking</h5>
               </article>
             </div>
             <div class="col-sm-6 col-lg-3 wow-outer">
-<article class="thumbnail-light wow slideInLeft" data-wow-delay=".1s"><a class="thumbnail-light-media"><img class="thumbnail-light-image" src="img/display/Garrett-Collier-communication.jpg" alt="Garrett Collier speaking with residents" width="720" height="480" loading="lazy" decoding="async"/></a>
+<article class="thumbnail-light wow slideInLeft" data-wow-delay=".1s"><a class="thumbnail-light-media"><img class="thumbnail-light-image" src="/img/display/Garrett-Collier-communication.jpg" alt="Garrett Collier speaking with residents" width="720" height="480" loading="lazy" decoding="async"/></a>
                 <h5 class="thumbnail-light-title wow slideInLeft">Transparency & Communication</h5>
               </article>
             </div>
             <div class="col-sm-6 col-lg-3 wow-outer">
-<article class="thumbnail-light wow slideInLeft" data-wow-delay=".05s"><a class="thumbnail-light-media"><img class="thumbnail-light-image" src="img/display/Garrett-Collier-community.jpg" alt="Hot Springs community gathering" width="720" height="480" loading="lazy" decoding="async"/></a>
+<article class="thumbnail-light wow slideInLeft" data-wow-delay=".05s"><a class="thumbnail-light-media"><img class="thumbnail-light-image" src="/img/display/Garrett-Collier-community.jpg" alt="Hot Springs community gathering" width="720" height="480" loading="lazy" decoding="async"/></a>
                 <h5 class="thumbnail-light-title wow slideInLeft">Community First</h5>
               </article>
             </div>
             <div class="col-sm-6 col-lg-3 wow-outer">
-<article class="thumbnail-light wow slideInLeft" data-wow-delay=".15s"><a class="thumbnail-light-media"><img class="thumbnail-light-image" src="img/display/Garrett-Collier-city-county.jpg" alt="Hot Springs city and county collaboration" width="720" height="480" loading="lazy" decoding="async"/></a>
+<article class="thumbnail-light wow slideInLeft" data-wow-delay=".15s"><a class="thumbnail-light-media"><img class="thumbnail-light-image" src="/img/display/Garrett-Collier-city-county.jpg" alt="Hot Springs city and county collaboration" width="720" height="480" loading="lazy" decoding="async"/></a>
                 <h5 class="thumbnail-light-title wow slideInLeft">City–County Collaboration</h5>
               </article>
             </div>
@@ -183,7 +201,7 @@
               <div class="col-sm-10 col-lg-7 col-xl-6">
                 <h3 class="wow-outer"><span class="wow slideInDown">Join the Campaign for a <br>Stronger Hot Springs</span></h3>
                 <p class="wow-outer offset-top-3"><span class="wow slideInDown" data-wow-delay=".05s" style="color: white;">If you believe in collaboration, transparency, and progress, join the campaign today. Your support helps move Hot Springs forward.</span></p>
-                <div class="wow-outer button-outer"> <a class="button button-primary button-winona wow slideInDown" href="contact.html" data-wow-delay=".1s">Become a volunteer</a></div>
+                <div class="wow-outer button-outer"> <a class="button button-primary button-winona wow slideInDown" href="/contact/" data-wow-delay=".1s">Become a volunteer</a></div>
               </div>
             </div>
           </div>
@@ -257,20 +275,20 @@
               <div class="col-sm-6 col-lg-6 box-style-1">
                 <h4>Campaign Photos</h4>
                 <div class="row row-x-10" data-lightgallery="group">
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="img/resized/WGG.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="img/display/WGG.jpg" alt="">
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/img/resized/WGG.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/img/display/WGG.jpg" alt="">
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="img/resized/WG.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="img/display/WG.jpg" alt="">
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/img/resized/WG.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/img/display/WG.jpg" alt="">
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="img/resized/GCap.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="img/display/GCap.jpg" alt="">
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/img/resized/GCap.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/img/display/GCap.jpg" alt="">
                       <div class="thumbnail-minimal-caption"></div></a></div>
-<div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="img/resized/USCG.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="img/display/USCG.jpg" alt="">
+<div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/img/resized/USCG.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/img/display/USCG.jpg" alt="">
                       <div class="thumbnail-minimal-caption"></div></a></div>
 
 
 </div>
               </div>
             </div>
-            <a class="brand" href="index.html"><img src="img/Collier.png" alt="Collier for City Director" width="201" height="36" srcset="img/Collier.png"/></a>
+            <a class="brand" href="/"><img src="/img/Collier.png" alt="Collier for City Director" width="201" height="36" srcset="/img/Collier.png"/></a>
           </div>
         </div>
         <div class="footer-advanced-aside">
@@ -278,11 +296,11 @@
             <div class="footer-advanced-layout">
               <div>
                 <ul class="list-nav">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about/">About</a></li>
 
 
-<li><a href="contact.html">Contact</a></li>
+<li><a href="/contact/">Contact</a></li>
                   <li><a href="https://buy.stripe.com/14A14m8mxflxbtGfCw6wE00" target="_blank" rel="noopener noreferrer">Donate</a></li>
                 </ul>
               </div>
@@ -304,7 +322,7 @@
             <div class="footer-advanced-layout">
 <p class="rights">
   <span class="rights-main"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;Collier for City Director. All rights reserved.</span></span>
-  <span class="rights-legal"><a href="privacy-policy.html">Privacy Policy</a><span>&nbsp;|&nbsp;Paid for by Collier for City Director.</span></span>
+  <span class="rights-legal"><a href="/privacy-policy/">Privacy Policy</a><span>&nbsp;|&nbsp;Paid for by Collier for City Director.</span></span>
 </p>
             </div>
           </div>
@@ -312,7 +330,7 @@
       </footer>
     </div>
 <div class="snackbars" id="form-output-global"></div>
-<script src="js/core.min.js"></script>
-    <script src="js/script.js?v=20260715"></script>
+<script src="/js/core.min.js"></script>
+    <script src="/js/script.js?v=20260715"></script>
   </body>
 </html>
