@@ -144,36 +144,41 @@
               <div class="col-lg-9 cell-inner">
                 <div class="section-lg">
                   <h3 class="wow-outer"><span class="wow slideInDown">Get in Touch</span></h3>
-<form class="rd-form rd-mailform" action="mailto:garrettcollierbusiness@gmail.com" method="POST" enctype="text/plain">
+                  <p class="alert alert-success" id="contact-form-sent" hidden>Your message has been sent. Thank you for reaching out.</p>
+<form class="rd-form" action="https://formsubmit.co/garrettcollierbusiness@gmail.com" method="POST" accept-charset="UTF-8">
+                    <input type="hidden" name="_subject" value="New message from Collier for City Director">
+                    <input type="hidden" name="_next" value="https://collierforcitydirector.com/contact/?sent=true">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display: none;">
                     <div class="row row-10">
                       <div class="col-md-6 wow-outer">
                         <div class="form-wrap wow fadeSlideInUp">
                           <label class="form-label-outside" for="contact-first-name">First Name</label>
-                          <input class="form-input" id="contact-first-name" type="text" name="name" data-constraints="@Required">
+                          <input class="form-input" id="contact-first-name" type="text" name="first_name" autocomplete="given-name" maxlength="80" required data-constraints="@Required">
                         </div>
                       </div>
                       <div class="col-md-6 wow-outer">
                         <div class="form-wrap wow fadeSlideInUp">
                           <label class="form-label-outside" for="contact-last-name">Last Name</label>
-                          <input class="form-input" id="contact-last-name" type="text" name="name" data-constraints="@Required">
+                          <input class="form-input" id="contact-last-name" type="text" name="last_name" autocomplete="family-name" maxlength="80" required data-constraints="@Required">
                         </div>
                       </div>
                       <div class="col-md-6 wow-outer">
                         <div class="form-wrap wow fadeSlideInUp">
                           <label class="form-label-outside" for="contact-email">E-mail</label>
-                          <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                          <input class="form-input" id="contact-email" type="email" name="email" autocomplete="email" maxlength="120" required data-constraints="@Email @Required">
                         </div>
                       </div>
                       <div class="col-md-6 wow-outer">
                         <div class="form-wrap wow fadeSlideInUp">
                           <label class="form-label-outside" for="contact-phone">Phone</label>
-                          <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@PhoneNumber">
+                          <input class="form-input" id="contact-phone" type="tel" name="phone" autocomplete="tel" maxlength="30" data-constraints="@PhoneNumber">
                         </div>
                       </div>
                       <div class="col-12 wow-outer">
                         <div class="form-wrap wow fadeSlideInUp">
                           <label class="form-label-outside" for="contact-message">Your Message</label>
-                          <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                          <textarea class="form-input" id="contact-message" name="message" maxlength="2000" required data-constraints="@Required"></textarea>
                         </div>
                       </div>
                     </div>
@@ -263,5 +268,16 @@
 <div class="snackbars" id="form-output-global"></div>
 <script src="/js/core.min.js"></script>
     <script src="/js/script.js?v=20260715"></script>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var sentMessage = document.getElementById("contact-form-sent");
+
+        if (params.get("sent") === "true" && sentMessage) {
+          sentMessage.hidden = false;
+          window.history.replaceState(null, "", window.location.pathname + window.location.hash);
+        }
+      }());
+    </script>
   </body>
 </html>
