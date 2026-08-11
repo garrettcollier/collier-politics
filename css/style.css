@@ -16205,6 +16205,38 @@ img {
 	height: auto;
 }
 
+.campaign-podcast {
+	text-align: left;
+}
+
+.campaign-podcast .row-40 {
+	row-gap: 40px;
+}
+
+.campaign-podcast-video {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	border-radius: 8px;
+	background: #111111;
+	box-shadow: 0 18px 45px rgba(41, 41, 58, 0.16);
+}
+
+.campaign-podcast-video iframe {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+@media (max-width: 991.98px) {
+	.campaign-podcast {
+		text-align: center;
+	}
+}
+
 .brand img {
 	width: auto;
 	max-width: min(250px, 70vw);
