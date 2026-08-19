@@ -16205,6 +16205,20 @@ img {
 	height: auto;
 }
 
+.campaign-inline-link {
+	color: #ec181f;
+	font-weight: 500;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+}
+
+.campaign-inline-link:hover,
+.campaign-inline-link:focus {
+	color: #aa0e13;
+	text-decoration: underline;
+}
+
 .campaign-podcast {
 	text-align: left;
 }
