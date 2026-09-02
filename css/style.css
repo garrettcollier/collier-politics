@@ -16219,6 +16219,49 @@ img {
 	text-decoration: underline;
 }
 
+.voter-resources {
+	text-align: left;
+}
+
+.voter-resource-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	min-height: 100%;
+	padding: 30px;
+	border-radius: 8px;
+	background: #ffffff;
+	box-shadow: 0 14px 35px rgba(41, 41, 58, 0.1);
+}
+
+.voter-resource-card h5 {
+	margin-bottom: 14px;
+}
+
+.voter-resource-card p {
+	flex: 1 1 auto;
+	margin-bottom: 24px;
+}
+
+.voter-resource-card .button {
+	width: 100%;
+	min-width: 0;
+	padding-right: 18px;
+	padding-left: 18px;
+	white-space: normal;
+}
+
+@media (max-width: 991.98px) {
+	.voter-resources {
+		text-align: center;
+	}
+
+	.voter-resource-card {
+		align-items: center;
+		text-align: center;
+	}
+}
+
 .campaign-podcast {
 	text-align: left;
 }
